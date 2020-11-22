@@ -1,0 +1,12 @@
+.container-post{
+    border: 1px solid pink;
+    background-color: blue;
+}
+.container-post{
+background-color: red;
+/* Se pueden encimar y modificar los colores en cascada */
+}
+#post-unique{
+    background-color: black;
+}
+
