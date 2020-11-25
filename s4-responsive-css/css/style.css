@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  * {
+    box-sizing: border-box;
+}
+
+/* Small devices */
+.square {
+    width: 100%;
+    height: 100px;
+    border-radius: 0px;
+    background-color: rgb(172, 133, 165);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-content: flex-center;
+}
+
+.square:nth-of-type(even) {
+    background-color: rgb(142, 168, 255);
+}
+
+.circle {
+    width: 100%;
+    height: 100px;
+    border-radius: 40px;
+    background-color: rgb(172, 133, 165);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-content: flex-center;
+}
+
+.circle:nth-of-type(even) {
+    background-color: rgb(142, 168, 255);
+}
+
+.button-square {
+    width: 100px;
+    height: 100px;
+    border-radius: 0px;
+    background-color: rgb(172, 133, 165);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-content: flex-center;
+}
+
+.button-square:nth-of-type(even) {
+    background-color: rgb(142, 168, 255);
+}
+
+.button-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 40px;
+    background-color: rgb(172, 133, 165);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-content: flex-center;
+}
+
+.button-circle:nth-of-type(even) {
+    background-color: rgb(142, 168, 255);
+}
+
+.text {
+    font-size: 1em;
+    color: rgb(60, 110, 77);
+}
+
+
+/* Medium devices */
+@media only screen and (min-width: 768px) {
+
+    .square {
+        width: 100%;
+        border-radius: 0px;
+        margin: 20px 0;
+        background-color: rgb(172, 133, 165);
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-content: flex-center;
+    }
+
+    .square:nth-of-type(odd) {
+        background-color: rgb(172, 133, 165);
+    }
+
+    .square:nth-of-type(even) {
+        background-color: rgb(142, 168, 255);
+    }
+
+    .circle {
+        width: 100%;
+        border-radius: 20px;
+        margin: 20px 0;
+        background-color: rgb(172, 133, 165);
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-content: flex-center;
+    }
+
+    .circle:nth-of-type(even) {
+        background-color: rgb(142, 168, 255);
+    }
+
+    .button-square {
+        width: 200px;
+        border-radius: 0px;
+        margin: 20px 0;
+        background-color: rgb(172, 133, 165);
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-content: flex-center;
+    }
+
+    .button-square:nth-of-type(even) {
+        background-color: rgb(142, 168, 255);
+    }
+
+    .button-circle {
+        width: 200px;
+        border-radius: 20px;
+        margin: 20px 0;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-content: flex-center;
+    }
+
+    .text {
+        font-size: 2em;
+        color: rgb(60, 110, 77);
+    }
+}
+ 
+
+/* Extra large devices */
+@media only screen and (min-width: 1200px) {
+
+    .square {
+        width: 100%;
+        border-radius: 40px;
+        margin: 20px 0;
+        background-color: rgb(172, 133, 165);
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-content: flex-center;
+    }
+
+    .square:nth-of-type(even) {
+        background-color: rgb(142, 168, 255);
+    }
+
+    .circle {
+        width: 100%;
+        border-radius: 0px;
+        margin: 20px 0;
+        background-color: rgb(172, 133, 165);
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-content: flex-center;
+    }
+
+    .circle:nth-of-type(even) {
+        background-color: rgb(142, 168, 255);
+    }
+
+    .button-square {
+        width: 300px;
+        border-radius: 40px;
+        margin: 20px 0;
+        background-color: rgb(172, 133, 165);
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-content: flex-center;
+    }
+    
+    .button-square:nth-of-type(even) {
+        background-color: rgb(142, 168, 255);
+    }
+
+    .button-circle {
+        width: 300px;
+        border-radius: 0px;
+        margin: 20px 0;
+        background-color: rgb(172, 133, 165);
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-content: flex-center;
+    }
+
+    .button-circle:nth-of-type(even) {
+        background-color: rgb(142, 168, 255);
+    }
+
+    .text {
+        font-size: 3em;
+        color: rgb(60, 110, 77);
+    }
+}
