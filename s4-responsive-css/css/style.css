@@ -4,24 +4,36 @@
     box-sizing: border-box;
   }
 
-  * {
-    box-sizing: border-box;
-}
-
 /* Small devices */
+
+.flex-box {
+    height: 100vh;  /*Viewport height*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
 .square {
     width: 100%;
     height: 100px;
     border-radius: 0px;
     background-color: rgb(172, 133, 165);
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-content: flex-center;
 }
+
+.square:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/* rgba (0,0,0,0.5) incluye valores de opacidad que van de 0 a 1 */
 
 .square:nth-of-type(even) {
     background-color: rgb(142, 168, 255);
+}
+
+.square:hover:nth-of-type(even) {
+    background-color: rgb(0, 0, 0);
 }
 
 .circle {
@@ -30,13 +42,18 @@
     border-radius: 40px;
     background-color: rgb(172, 133, 165);
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-content: flex-center;
+}
+
+.circle:hover {
+    background-color: rgb(255, 255, 255);
 }
 
 .circle:nth-of-type(even) {
     background-color: rgb(142, 168, 255);
+}
+
+.circle:hover:nth-of-type(even) {
+    background-color: rgb(0, 0, 0);
 }
 
 .button-square {
@@ -44,14 +61,18 @@
     height: 100px;
     border-radius: 0px;
     background-color: rgb(172, 133, 165);
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-content: flex-center;
+}
+
+.button-square:hover {
+    background-color: rgb(255, 255, 255);
 }
 
 .button-square:nth-of-type(even) {
     background-color: rgb(142, 168, 255);
+}
+
+.button-square:hover:nth-of-type(even) {
+    background-color: rgb(0, 0, 0);
 }
 
 .button-circle {
@@ -59,14 +80,18 @@
     height: 100px;
     border-radius: 40px;
     background-color: rgb(172, 133, 165);
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-content: flex-center;
+}
+
+.button-circle:hover {
+    background-color: rgb(255, 255, 255);
 }
 
 .button-circle:nth-of-type(even) {
     background-color: rgb(142, 168, 255);
+}
+
+.button-circle:hover:nth-of-type(even) {
+    background-color: rgb(0, 0, 0);
 }
 
 .text {
@@ -74,141 +99,99 @@
     color: rgb(60, 110, 77);
 }
 
+.text:hover {
+    color: rgb(160, 49, 49);
+}
+
+.text-2 {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(100, 110,77);
+}
+
+.text-2:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(160, 49, 49); ;
+}
 
 /* Medium devices */
 @media only screen and (min-width: 768px) {
 
+    .flex-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
     .square {
         width: 100%;
         border-radius: 0px;
-        margin: 20px 0;
-        background-color: rgb(172, 133, 165);
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        align-content: flex-center;
-    }
-
-    .square:nth-of-type(odd) {
-        background-color: rgb(172, 133, 165);
-    }
-
-    .square:nth-of-type(even) {
-        background-color: rgb(142, 168, 255);
     }
 
     .circle {
         width: 100%;
         border-radius: 20px;
-        margin: 20px 0;
-        background-color: rgb(172, 133, 165);
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        align-content: flex-center;
     }
 
-    .circle:nth-of-type(even) {
-        background-color: rgb(142, 168, 255);
-    }
 
     .button-square {
         width: 200px;
         border-radius: 0px;
-        margin: 20px 0;
-        background-color: rgb(172, 133, 165);
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        align-content: flex-center;
-    }
-
-    .button-square:nth-of-type(even) {
-        background-color: rgb(142, 168, 255);
     }
 
     .button-circle {
         width: 200px;
         border-radius: 20px;
         margin: 20px 0;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        align-content: flex-center;
     }
 
     .text {
         font-size: 2em;
         color: rgb(60, 110, 77);
     }
+
+    .text-2 {
+        font-size: 2em;
+        color: rgb(60, 110, 77);
+    }
 }
  
-
 /* Extra large devices */
 @media only screen and (min-width: 1200px) {
 
+    .flex-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
     .square {
         width: 100%;
         border-radius: 40px;
-        margin: 20px 0;
-        background-color: rgb(172, 133, 165);
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        align-content: flex-center;
-    }
-
-    .square:nth-of-type(even) {
-        background-color: rgb(142, 168, 255);
     }
 
     .circle {
         width: 100%;
         border-radius: 0px;
-        margin: 20px 0;
-        background-color: rgb(172, 133, 165);
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        align-content: flex-center;
-    }
-
-    .circle:nth-of-type(even) {
-        background-color: rgb(142, 168, 255);
     }
 
     .button-square {
         width: 300px;
         border-radius: 40px;
-        margin: 20px 0;
-        background-color: rgb(172, 133, 165);
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        align-content: flex-center;
-    }
-    
-    .button-square:nth-of-type(even) {
-        background-color: rgb(142, 168, 255);
     }
 
     .button-circle {
         width: 300px;
         border-radius: 0px;
-        margin: 20px 0;
-        background-color: rgb(172, 133, 165);
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        align-content: flex-center;
-    }
-
-    .button-circle:nth-of-type(even) {
-        background-color: rgb(142, 168, 255);
     }
 
     .text {
         font-size: 3em;
+        color: rgb(60, 110, 77);
+    }
+
+    .text-2 {
+        font-size: 2em;
         color: rgb(60, 110, 77);
     }
 }
