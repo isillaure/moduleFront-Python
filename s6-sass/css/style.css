@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.section {
+  border: 1px solid #ccc;
+  height: 200px;
+}
+
+.section .form-login  {
+  border: 1px solid #ccc;
+  padding: 20px;
+  -webkit-box-shadow: 2px 5px 5px #323333;
+          box-shadow: 2px 5px 5px #323333;
+  width: 40%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section .form-login  input {
+  height: 25px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+
+.section .form-login .form-new {
+  background-color: red;
+}
+
+.section .form-login  .btn {
+  height: 25px;
+  border: none;
+  background-color: rgba;
+  color: #ffffff;
+  border-radius: 50px;
+  height: 25px;
+  border: none;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+.section .form-login  .btn:hover {
+  background-color: red;
+  color: #ffffff;
+}
+
+/* Selector descendiente, sass permite hacer nesting
+.section .form-login {
+    border: $border;
+    padding: 20px;
+    box-shadow: 2px 5px 5px rgba($color: #000000, $alpha: 1.0);
+}
+*/
+/*# sourceMappingURL=style.css.map */

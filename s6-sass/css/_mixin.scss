@@ -1,0 +1,7 @@
+@mixin styleButton ($color-white) {
+    height: 25px;
+    border: none;
+    background-color: $bg-color;
+    color: $color-white;
+    border-radius: 50px;
+}
