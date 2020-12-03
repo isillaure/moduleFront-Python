@@ -1,0 +1,16 @@
+header {
+    background-color: blue;
+    border-color: red;
+    border-style: solid;
+    color: white;
+    margin: 1em;
+    padding: 1em;
+}
+
+nav {
+    background-color: orange;
+    border-color: green;
+    border-style: solid;
+    color: black;
+}
+
